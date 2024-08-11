@@ -558,10 +558,6 @@ html {
   --tw-contain-style:  ;
 }
 
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
 }
@@ -586,30 +582,6 @@ html {
   left: 2rem;
 }
 
-.top-0 {
-  top: 0px;
-}
-
-.top-\[-5\] {
-  top: -5;
-}
-
-.top-\[-50px\] {
-  top: -50px;
-}
-
-.z-10 {
-  z-index: 10;
-}
-
-.z-0 {
-  z-index: 0;
-}
-
-.z-20 {
-  z-index: 20;
-}
-
 .order-1 {
   order: 1;
 }
@@ -622,8 +594,9 @@ html {
   margin: 2rem;
 }
 
-.m-5 {
-  margin: 1.25rem;
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .mx-5 {
@@ -676,16 +649,6 @@ html {
   margin-bottom: 2rem;
 }
 
-.mx-1 {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-}
-
-.mx-0 {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -698,12 +661,12 @@ html {
   margin-right: 2rem;
 }
 
-.mt-72 {
-  margin-top: 18rem;
-}
-
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mt-72 {
+  margin-top: 18rem;
 }
 
 .block {
@@ -738,8 +701,8 @@ html {
   height: 95vh;
 }
 
-.w-36 {
-  width: 9rem;
+.w-28 {
+  width: 7rem;
 }
 
 .w-\[100\%\] {
@@ -754,20 +717,12 @@ html {
   width: 100%;
 }
 
-.w-28 {
-  width: 7rem;
-}
-
 .max-w-2xl {
   max-width: 42rem;
 }
 
 .max-w-7xl {
   max-width: 80rem;
-}
-
-.max-w-full {
-  max-width: 100%;
 }
 
 .cursor-pointer {
@@ -782,16 +737,8 @@ html {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .flex-wrap {
   flex-wrap: wrap;
-}
-
-.content-center {
-  align-content: center;
 }
 
 .items-center {
@@ -810,25 +757,12 @@ html {
   gap: 2.5rem;
 }
 
-.gap-5 {
-  gap: 1.25rem;
-}
-
-.gap-8 {
-  gap: 2rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
-}
-
 .gap-3 {
   gap: 0.75rem;
 }
 
-.gap-x-3 {
-  -moz-column-gap: 0.75rem;
-       column-gap: 0.75rem;
+.gap-8 {
+  gap: 2rem;
 }
 
 .overflow-hidden {
@@ -924,10 +858,6 @@ html {
   background-color: transparent;
 }
 
-.bg-\[rgba\(999\2c 0\2c 0\2c 0\.5\)\] {
-  background-color: rgba(999,0,0,0.5);
-}
-
 .bg-\[url\(\.\/img\/iron-man\.jpg\)\] {
   background-image: url(./img/iron-man.jpg);
 }
@@ -982,24 +912,12 @@ html {
      object-fit: cover;
 }
 
-.p-10 {
-  padding: 2.5rem;
-}
-
 .p-3 {
   padding: 0.75rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
-}
-
 .p-8 {
   padding: 2rem;
-}
-
-.p-4 {
-  padding: 1rem;
 }
 
 .px-10 {
@@ -1010,6 +928,11 @@ html {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .px-6 {
@@ -1042,11 +965,6 @@ html {
   padding-bottom: 1rem;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1061,10 +979,6 @@ html {
 
 .text-center {
   text-align: center;
-}
-
-.text-end {
-  text-align: end;
 }
 
 .text-2xl {
@@ -1227,14 +1141,14 @@ html {
     margin-right: 5rem;
   }
 
-  .sm\:my-0 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
   .sm\:mx-5 {
     margin-left: 1.25rem;
     margin-right: 1.25rem;
+  }
+
+  .sm\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .sm\:flex {
@@ -1251,10 +1165,6 @@ html {
 
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .sm\:flex-wrap {
-    flex-wrap: wrap;
   }
 
   .sm\:flex-nowrap {
@@ -1279,8 +1189,8 @@ html {
     padding-right: 4rem;
   }
 
-  .sm\:text-end {
-    text-align: end;
+  .sm\:text-start {
+    text-align: start;
   }
 
   .sm\:text-5xl {
@@ -1294,17 +1204,9 @@ html {
 }
 
 @media (min-width: 768px) {
-  .md\:m-5 {
-    margin: 1.25rem;
-  }
-
   .md\:mx-24 {
     margin-left: 6rem;
     margin-right: 6rem;
-  }
-
-  .md\:flex {
-    display: flex;
   }
 
   .md\:w-3\/4 {
@@ -1315,32 +1217,12 @@ html {
     width: 80%;
   }
 
-  .md\:w-28 {
-    width: 7rem;
-  }
-
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .md\:flex-nowrap {
     flex-wrap: nowrap;
   }
 
-  .md\:justify-between {
-    justify-content: space-between;
-  }
-
-  .md\:text-center {
-    text-align: center;
-  }
-
-  .md\:text-end {
-    text-align: end;
+  .md\:text-start {
+    text-align: start;
   }
 
   .md\:text-2xl {
@@ -1375,10 +1257,6 @@ html {
 
   .lg\:inline {
     display: inline;
-  }
-
-  .lg\:flex {
-    display: flex;
   }
 
   .lg\:hidden {
