@@ -14,9 +14,10 @@
 </head>
 <body class="bg-[#0E1525] font-Poppins">
   <!-- header secton start-->
-  <section class="w-[100%] h-[95vh] bg-[url(./img/iron-man.jpg)] bg-right bg-cover">
+  <section class="h-[95vh] bg-[url(./img/iron-man.jpg)] bg-right bg-cover">
     <div class="w-[100%] h-[95vh] bg-[rgba(0.5,0,0,0.5)]">
-    <div class="flex justify-between items-center px-4 sm:px-16 py-3 bg-black">
+    <div class="w-full bg-black">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-16 py-3">
       <div class="flex">
         <img class="w-[60px] h-[60px]" src="./img/logo-1.png" alt="">
         <h1 class="lg:inline hidden mx-5 text-lg font-semibold py-4 border-red-600 border-b-4 text-red-600 duration-500 cursor-pointer">Home</h1>
@@ -35,9 +36,10 @@
         <i class="inline lg:hidden hover:text-red-600 duration-500 ml-5 cursor-pointer text-4xl fa-solid fa-bars"></i>
       </div>
     </div>
-    <div class="px-10 sm:px-10 sm:mx-20 md:mx-24 lg:mx-48 mt-72">
+    </div>
+    <div class="max-w-7xl mx-auto px-5 sm:px-10 mt-48">
       <p class="text-gray-400 tracking-widest	">WELCOME TO MY WORLD</p>
-      <h1 class="my-8 md:text-6xl sm:text-5xl text-4xl text-white font-bold sm:font-black">I'm Iron Man <br>
+      <h1 class="my-8 sm:text-7xl text-6xl text-white font-extrabold">I'm Iron Man <br>
       <span class="text-red-600">AN AVENGER.</span>
       </h1>
       <h1 class="md:text-6xl sm:text-5xl text-4xl text-white font-semibold">based in USA.</h1>
@@ -47,38 +49,77 @@
   </section>
   <!-- header secton end-->
   <!-- Man-1 section start -->
-  <section class="grid lg:grid-cols-[40%_auto] grid-flow-row items-center xl:mx-36 lg:mx-16 my-24 px-8 justify-center gap-8">
+  <section class="max-w-7xl grid lg:grid-cols-[40%_auto] grid-flow-row items-center mx-auto my-24 px-8 justify-center gap-8">
     <div class=""><img class=" lg:w-[483px] lg:h-[555px] md:w-4/5 w-full mx-auto object-cover bg-center rounded-2xl" src="./img/man-1.jpg" alt=""></div>
     <div class="">
       <p class="inline text-xl font-bold text-transparent bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text">My About Details</p>
       <h1 class="my-6 text-white text-5xl font-bold cursor-pointer">About Me</h1>
       <p class="text-gray-400 text-xl">There are many variations of passages of Lorem Ipsum available, but the majority have suffered in some form, by injected humour.</p>
-      <div class="hidden sm:flex justify-between items-center md:w-3/4 lg:w-auto cursor-pointer pl-6 rounded-[50px] my-6 border-2 border-gray-500">
-        <h1 class="font-bold text-lg text-white duration-500 hover:text-red-500">Main Skills</h1>
-        <h1 class="font-bold text-lg text-white duration-500 hover:text-red-500">Award</h1>
+      <div class="hidden sm:flex justify-between items-center md:w-3/4 lg:w-auto cursor-pointer pr-6 rounded-[50px] my-6 border-2 border-gray-500">
+        <h1 class="font-bold text-lg text-white bg-red-500 py-3 px-6 rounded-[50px]">Main Skills</h1>
         <h1 class="font-bold text-lg text-white duration-500 hover:text-red-500">Experience</h1>
-        <h1 class="font-bold text-lg text-white bg-red-500 py-3 px-6 rounded-[50px]">Education</h1>
+        <h1 class="font-bold text-lg text-white duration-500 hover:text-red-500">Award</h1>
+        <h1 class="font-bold text-lg text-white duration-500 hover:text-red-500">Education</h1>
       </div>
-      <h1 class=" sm:hidden block text-center my-5 font-bold text-lg text-white bg-red-500 py-3 px-6 rounded-[50px]">Education</h1>
-      <p class="text-gray-400 mb-5">MSc In CSE - Institute, Los Angeles, CA<br>2010</p>
-      <p class="text-gray-400 mb-5">BSc In CSE - ABC Institute, Los Angeles, CA<br>2009</p>
-      <p class="text-gray-400 mb-5">Diploma in Computer Science - Gamma Technical Institute<br>2009</p>
-      <p class="text-gray-400 mb-5">Graphic Designer - ABC Institute, Los Angeles, CA<br>2007</p>
-      <h1 class=" sm:hidden block text-center my-5 font-bold text-lg text-white bg-red-500 py-3 px-6 rounded-[50px]">Award</h1>
+      <h1 class="sm:hidden block text-center my-5 font-bold text-lg text-white bg-red-500 py-3 px-6 rounded-[50px]">Main Skills</h1>
+      <div class="text-gray-400 font-bold my-5">
+        <div class="mb-5">
+          <div class="flex justify-between text-xl mb-5">
+              <span>Designing</span>
+              <span>95%</span>
+          </div>
+          <div class="w-full bg-gray-300 rounded-full h-2">
+              <div class="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full" style="width: 95%;"></div>
+          </div>
+        </div>
+        <div class="mb-5">
+          <div class="flex justify-between text-xl mb-5">
+            <span>Management</span>
+            <span>85%</span>
+          </div>
+          <div class="w-full bg-gray-300 rounded-full h-2">
+            <div class="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="mb-5">
+          <div class="flex justify-between text-xl mb-5">
+            <span>Marketting</span>
+            <span>75%</span>
+          </div>
+          <div class="w-full bg-gray-300 rounded-full h-2">
+            <div class="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full" style="width: 75%;"></div>
+          </div>
+        </div>
+        <div class="mb-5">
+          <div class="flex justify-between text-xl mb-5">
+            <span>Development</span>
+            <span>90%</span>
+          </div>
+          <div class="w-full bg-gray-300 rounded-full h-2">
+            <div class="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full" style="width: 90%;"></div>
+          </div>
+        </div>
+      </div>
+      <h1 class="sm:hidden block text-center my-5 font-bold text-lg text-white bg-red-500 py-3 px-6 rounded-[50px]">Award</h1>
       <p class="text-gray-400 mb-5 sm:hidden">Awwwards.com - Winner<br>2019-2020</p>
       <p class="text-gray-400 mb-5 sm:hidden">CSS Design Awards - Winner<br>2017-2018</p>
       <p class="text-gray-400 mb-5 sm:hidden">Design nominees - siteof the day<br>2013-2014</p>
       <p class="text-gray-400 mb-5 sm:hidden">Graphic Designer of the year<br>2015-2016</p>
-      <h1 class=" sm:hidden block text-center my-5 font-bold text-lg text-white bg-red-500 py-3 px-6 rounded-[50px]">Experience</h1>
+      <h1 class="sm:hidden block text-center my-5 font-bold text-lg text-white bg-red-500 py-3 px-6 rounded-[50px]">Experience</h1>
       <p class="text-gray-400 mb-5 sm:hidden">Sr. Front-end Engineer - Google<br>2018 - Current</p>
       <p class="text-gray-400 mb-5 sm:hidden">Front-end Engineer - Microsoft<br>2017 - 2018</p>
       <p class="text-gray-400 mb-5 sm:hidden">Software Engineer - Alibaba<br>2013- 2014</p>
       <p class="text-gray-400 mb-5 sm:hidden">Lead Software Engineer - Amazon<br>2019- 2020</p>
+      <h1 class="sm:hidden block text-center my-5 font-bold text-lg text-white bg-red-500 py-3 px-6 rounded-[50px]">Education</h1>
+      <p class="text-gray-400 mb-5 sm:hidden">MSc In CSE - Institute, Los Angeles, CA<br>2010</p>
+      <p class="text-gray-400 mb-5 sm:hidden">BSc In CSE - ABC Institute, Los Angeles, CA<br>2009</p>
+      <p class="text-gray-400 mb-5 sm:hidden">Diploma in Computer Science - Gamma Technical Institute<br>2009</p>
+      <p class="text-gray-400 mb-5 sm:hidden">Graphic Designer - ABC Institute, Los Angeles, CA<br>2007</p>
     </div>
   </section>
   <!-- Man-1 section end -->
   <!-- Awesome services start -->
-  <section class="max-w-2xl mx-auto sm:p-8 px-4 ty-16">
+  <section class="max-w-2xl text-center mx-auto sm:p-8 px-4 ty-16">
     <p class="inline text-xl font-bold text-transparent bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text">What I can do for you</p>
     <h1 class="text-white my-7 sm:text-5xl text-3xl font-bold">My Awesome Service</h1>
     <p class="text-xl text-gray-400">There are many variations of passages of Lorem Ipsum available,
@@ -227,9 +268,9 @@
     <form action="" class="lg:order-1 order-2">
       <div>
         <p class="inline text-xl font-bold text-transparent bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text">Let's Say Hi</p>
-        <h1 class="my-8 text-5xl font-bold text-white">Contant With Us.</h1>
-        <p class="text-gray-400 text-xl mb-5">Call us directly: &nbsp; &nbsp;<span class="font-bold">+92 325 6312846</span></p>
-        <p class="text-gray-400 text-xl">Contact email: &nbsp; &nbsp;<span class="font-bold">rsaqlainasif@gmail.com</span></p>
+        <h1 class="my-8 text-[32px] sm:8xl font-bold text-white">Contant With Us.</h1>
+        <p class="text-gray-400 font-semibold text-[14px] sm:text-lg mb-5">Call us directly: &nbsp; &nbsp;<span class="text-gray-300 font-bold">+92 325 6312846</span></p>
+        <p class="text-gray-400 font-semibold text-[14px] sm:text-lg">Contact email: &nbsp; &nbsp;<span class="text-gray-300 font-bold">rsaqlainasif@gmail.com</span></p>
       </div>
       <div class="grid grid-cols-1">
         <input class="text-lg bg-transparent text-gray-400 border-2 outline-none my-5 rounded-md border-gray-700 p-3" type="text" required placeholder="Your Name *">
@@ -243,15 +284,17 @@
   </div>
   <!-- contact form section end -->
   <!-- Footer section start -->
-  <section class="w-full bg-[#091020] p-8 text-white flex justify-between items-center text-center lg:text-end flex-wrap md:flex-nowrap">
-    <img class="w-28 my-5 text-center" src="./img/logo-2.png" alt="">
-    <div class="flex sm:gap-5 gap-3 sm:mx-5 mx-0 flex-wrap sm:flex-nowrap">
-      <i class="border border-gray-400 rounded-full py-4 px-6 text-xl text-gray-300 hover:bg-red-600 duration-500 fa-brands fa-facebook-f"></i>
-      <i class="border border-gray-400 rounded-full py-4 px-5 text-xl text-gray-300 hover:bg-red-600 duration-500 fa-brands fa-linkedin-in"></i>
-      <i class="border border-gray-400 rounded-full py-4 px-5 text-xl text-gray-300 hover:bg-red-600 duration-500 fa-brands fa-twitter"></i>
-      <i class="border border-gray-400 rounded-full py-4 px-5 text-xl text-gray-300 hover:bg-red-600 duration-500 fa-brands fa-instagram"></i>
+  <section class="w-full bg-[#091020]">
+    <div class="max-w-7xl mx-auto p-8 text-white flex md:flex-row flex-col justify-between items-center text-center lg:text-end">
+      <img class="w-28 my-5 text-center" src="./img/logo-2.png" alt="">
+      <div class="flex sm:gap-5 gap-3 sm:mx-5 mx-0 flex-wrap sm:flex-nowrap">
+        <i class="border border-gray-400 rounded-full py-3 px-5 text-lg text-gray-300 hover:bg-red-600 duration-500 fa-brands fa-facebook-f"></i>
+        <i class="border border-gray-400 rounded-full py-3 px-4 text-lg text-gray-300 hover:bg-red-600 duration-500 fa-brands fa-linkedin-in"></i>
+        <i class="border border-gray-400 rounded-full py-3 px-4 text-lg text-gray-300 hover:bg-red-600 duration-500 fa-brands fa-twitter"></i>
+        <i class="border border-gray-400 rounded-full py-3 px-4 text-lg text-gray-300 hover:bg-red-600 duration-500 fa-brands fa-instagram"></i>
+      </div>
+      <p class="mt-5">Copyright &copy; 2024 ib-themes All Rights Reserved.</p>
     </div>
-    <p class="mt-5">Copyright &copy; 2024 ib-themes All Rights Reserved.</p>
   </section>
   <!-- Footer section end -->
 </body>
